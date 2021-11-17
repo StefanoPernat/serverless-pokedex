@@ -1,7 +1,11 @@
 <template>
-  <div>Home</div>
+  <div class="content">Home</div>
 </template>
 
 <script setup></script>
 
-<style></style>
+<style>
+.content {
+  margin-top: 2em;
+}
+</style>

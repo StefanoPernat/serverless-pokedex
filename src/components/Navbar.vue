@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <span class="logo"></span>
-    <span>Home</span>
+    <span><router-link :to="{ name: 'Home' }">Home</router-link></span>
     <div class="search">
       <span>Region</span>
       <input type="text" />
@@ -54,5 +54,17 @@ span {
   border: none;
   border-bottom: 1px solid #ddd;
   color: #555;
+}
+
+nav span a {
+  text-decoration: none;
+}
+
+nav span a:hover {
+  border-bottom: 1px solid #f6cb4b;
+}
+
+nav span a:visited {
+  color: #08030f;
 }
 </style>
